@@ -1,0 +1,34 @@
+The Ringing Class Library as a whole, together with the programs that are 
+distributed with it, are under the terms of the GNU General Public License 
+(see COPYING.GPL for the terms of this).  
+
+However, some of the core files from the Ringing Class Library are licenced 
+under the less restrictive terms of the GNU Lesser General Public License
+(see COPYING.LGPL for the terms of this).  These files are all clearly 
+marked.
+
+The purpose of this is to allow the parts of the Ringing Class Library needed
+to read XML method libraries to be linked into commercial applications 
+without placing any restrictions on the licence used in such applications 
+as a whole.
+
+At the time of writing the following files, all in the ringing/ subdirectory,
+are licenced under the LGPL:
+
+  bell.h                  mathutils.h             libfacet.cpp
+  change.h                method.h                libout.cpp
+  common-am.h             peal.h                  library.cpp
+  common.h                place_notation.h        litelib.cpp
+  common-msvc.h           pointers.h              mathutils.cpp
+  dom.h                   row.h                   method.cpp
+  istream_impl.h          xmllib.h                peal.cpp
+  lexical_cast.h          xmlout.h                place_notation.cpp
+  libbase.h               bell.cpp                row.cpp
+  libfacet.h              change.cpp              stl.cpp
+  libout.h                dom_gdome.cpp           xmllib.cpp
+  library.h               dom_stub.cpp            xmlout.cpp
+  litelib.h               dom_xerces.cpp
+  macros.h                lexical_cast.cpp
+  
+For an up-to-date list, the licences on the individual files should be 
+consulted.
