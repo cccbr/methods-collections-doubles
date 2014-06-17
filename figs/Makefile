@@ -1,4 +1,4 @@
-.PHONY: figures
+.PHONY: figures clean
 
 figures: build/single-hunt-grids.eps
 
@@ -7,3 +7,6 @@ build/%.eps: build/%.ps
 
 build/%.ps: source/%.ps source/library.ps
 	cat source/library.ps $< > $@
+
+clean:
+	rm -f build/*
