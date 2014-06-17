@@ -31,6 +31,8 @@
 
 /linewidth { pointtoscale setlinewidth } def
 
+/centre { dup stringwidth pop 2 div 0 exch sub 0 rmoveto } bind def
+
 /draw_gridlines {
   0 1 10 {
     dup
@@ -106,5 +108,28 @@
   box_stroke
 } bind def
 
+/write_changes {
+  /Courier findfont
+  box_size 5 6 div mul scalefont setfont
+  0 0 0 setcolor
+  
+  exch 5 box_x exch 2 3 div add box_y moveto
+  show
+} bind def
+
+/write_headers {
+  /Times-Bold findfont
+  box_size 5 6 div mul scalefont setfont
+  0 0 0 setcolor
+  
+  2 box_x -0.4 box_y moveto
+  (Method) centre show
+  
+  5 box_x -0.4 box_y moveto
+  (Changes) show
+} def
+
 % Scale the coordinates so that we're working in mm
 1 1 pointtomm div dup scale
+
+write_headers
