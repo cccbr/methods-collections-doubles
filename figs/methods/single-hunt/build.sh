@@ -2,8 +2,6 @@
 
 cd $(dirname "$0")
 
-LD_LIBRARY_PATH=../../../ringing-lib:$LD_LIBRARY_PATH
-
 ../../../ringing-lib/psline -r5,5 -k1 -P -t1A,Helvetica,8 -o1A.pdf 5:"&5.1.5.1.5,125" -l1,100-0-0,1/6pt -l2,0-0-100,2/3pt -S20mm,100mm -F20mm,105mm
 ../../../ringing-lib/psline -r5,5 -k1 -P -t2H,Helvetica,8 -o2H.pdf 5:"&5.1.5.1.125,125" -l1,100-0-0,1/6pt -l2,0-0-100,2/3pt -l5,0-0-0,2/3pt -S20mm,75mm -F20mm,80mm
 ../../../ringing-lib/psline -r5,5 -k1 -P -t3G,Helvetica,8 -o3G.pdf 5:"&5.1.5.1.345,125" -l1,100-0-0,1/6pt -l5,0-0-100,2/3pt -l2,0-0-0,2/3pt -S20mm,75mm -F20mm,80mm
