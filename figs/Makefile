@@ -1,6 +1,6 @@
 .PHONY: figures clean
 
-figures: build/single-hunt-grids.eps build/twin-hunt-2-grids.eps build/twin-hunt-5-grids.eps
+figures: build/single-hunt-grids.eps build/twin-hunt-2-grids.eps build/twin-hunt-5-grids.eps build/treble-hunt-23-grids.eps build/treble-hunt-25-grids.eps
 
 build/%.eps: build/%.ps
 	ps2eps < $< > $@
