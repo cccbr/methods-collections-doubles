@@ -1,7 +1,7 @@
 .PHONY: build clean
 
 # Link to methsearch from the Ringing Class Library
-METHSEARCH = ~/c/ringing-lib/apps/methsearch/methsearch
+METHSEARCH = ../ringing-lib/methsearch
 
 # Web location of the current plain minor method collection
 CCMETHODS = http://www.methods.org.uk/method-collections/plain/plain5.txt
