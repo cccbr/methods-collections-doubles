@@ -19,7 +19,7 @@ single-hunt.txt: plain5.txt Makefile
 	$(METHSEARCH) \
 		--symmetric \
 		--all-methods \
-		--format='$$3#\t$$q\t$$l\t$$D\t$$o\t$$n $$C' \
+		--format='$$3#\t$$p\t$$l\t$$D\t$$o\t$$n $$C' \
 		--out-file=single-hunt.txt
 
 clean:
