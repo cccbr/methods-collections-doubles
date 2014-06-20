@@ -1,3 +1,5 @@
+write_headers
+
 2 0 box_shade
 0 2 box_shade
 2 4 box_shade
