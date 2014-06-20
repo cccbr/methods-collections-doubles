@@ -1,4 +1,4 @@
-%!PS
+%!PS-Adobe-2.0 EPSF-2.0
 
 % %%%%%%%%% %
 % CONSTANTS %
