@@ -1,0 +1,15 @@
+draw_gridlines
+draw_treble
+
+0 0 box_hunt_down
+1 1 box_hunt_down
+2 2 box_hunt_down
+3 3 box_hunt_down
+3 5 box_hunt_up
+2 6 box_hunt_up
+1 7 box_hunt_up
+0 8 box_hunt_up
+0 1 box_place
+4 2 box_place
+4 6 box_place
+0 7 box_place
