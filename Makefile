@@ -2,12 +2,9 @@
 
 build: doubles.pdf
 
-doubles.dvi: doubles.tex $(wildcard docs/*.tex) figures
-	latex doubles.tex
-	latex doubles.tex
-
-doubles.pdf: doubles.dvi
-	dvipdf doubles.dvi doubles.pdf
+doubles.pdf: doubles.tex $(wildcard docs/*.tex) figures
+	pdflatex doubles.tex
+	pdflatex doubles.tex
 
 figures:
 	make -C figs

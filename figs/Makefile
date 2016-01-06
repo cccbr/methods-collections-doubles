@@ -1,8 +1,11 @@
 .PHONY: figures clean
 
-FIGS := $(patsubst %.txt,%.eps,$(wildcard *.txt))
+FIGS := $(patsubst %.txt,%.pdf,$(wildcard *.txt))
 
 figures: $(FIGS)
+
+%.pdf: %.eps
+	epspdf $< $@
 
 %.eps: %.ps
 	ps2eps < $< > $@
@@ -11,4 +14,4 @@ figures: $(FIGS)
 	cat $^ > $@
 
 clean:
-	rm -f *.ps *.eps
+	rm -f *.ps *.eps *.pdf
